@@ -1,0 +1,129 @@
+.body{
+    height: 1200px;
+}
+.div_box{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+}
+
+.div_box h1{
+    font-size: 60px;
+}
+.divstyck{
+width: 70%;
+height: 5px;
+background-color: black;
+margin-left: 15%;
+margin-right: 15%;
+}
+.styck_div{
+   
+   
+    width: 70%;
+    height: 5px;
+    background-color: black;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 20%;
+}
+/* section style button */
+.button_add{
+ width: 90px;
+ height: 35px;
+ font-size:20px ;
+  
+}
+.mass_delete{
+width: 180px;
+height: 35px;
+font-size:20px;
+}
+.button_save{
+    width: 90px;
+    height: 35px;
+    font-size:20px ;
+}
+.button_cancele{
+    width: 130px;
+    height: 35px;
+    font-size:20px ;
+}
+  /* section form */
+.form_div{
+  
+    display: flex;
+    flex-direction: column;
+
+
+}
+.div_child{
+
+    width:90px;
+    margin-left: 15%;
+
+}
+.div_input{
+    display: flex;
+    margin-top: 40px;
+    font-size: 20px;
+}
+.div_switcher{
+    display: flex;
+    margin-top: 50px;
+
+}
+.switcher{
+    margin-left: 15%;
+    font-size: 20px;
+
+}
+
+
+select{
+    width: 200px;
+    margin-left: 20px;
+}
+.input_sku{
+    width: 400px;
+    margin-left: 20px;
+ 
+}
+.div_furniture{
+    display: flex;
+    margin-top: 30px;
+}
+.div_text{
+    width: 120px;
+    margin-right: 20px;
+    
+}
+
+.dvd{
+   display: flex;
+   margin-left: 15%;
+   margin-top: 50px;
+   
+}
+.dvd_none{
+    display: none;
+}
+.book{
+    display: flex;
+    margin-left: 15%;
+    margin-top: 50px;
+}
+.book_none{
+    display: none;
+}
+.furniture{
+    display: flex;
+   flex-direction: column;
+   margin-left: 15%;
+   margin-top: 50px;
+}
+.furniture_none{
+    display: none;
+}
