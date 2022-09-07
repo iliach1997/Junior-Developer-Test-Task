@@ -1,6 +1,4 @@
-.body{
-    height: 1200px;
-}
+
 .div_box{
     margin-left: 15%;
     margin-right: 15%;
@@ -19,28 +17,24 @@ background-color: black;
 margin-left: 15%;
 margin-right: 15%;
 }
-.styck_div{
-   
-   
-    width: 70%;
-    height: 5px;
-    background-color: black;
-    margin-left: 15%;
-    margin-right: 15%;
-    margin-bottom: 20%;
-}
+
 /* section style button */
 .button_add{
  width: 90px;
  height: 35px;
  font-size:20px ;
-  
+
 }
 .mass_delete{
 width: 180px;
 height: 35px;
 font-size:20px;
+margin-left: 5px;
 }
+.div_button{
+display: flex;
+}
+
 .button_save{
     width: 90px;
     height: 35px;
@@ -67,7 +61,7 @@ font-size:20px;
 }
 .div_input{
     display: flex;
-    margin-top: 40px;
+    margin-top: 25px;
     font-size: 20px;
 }
 .div_switcher{
@@ -100,6 +94,65 @@ select{
     margin-right: 20px;
     
 }
+.errors_div{
+    margin-left: 20.5%;
+    margin-top: 10px;
+    font-size: 20px;
+    
+}
+
+.farnitur_errors{
+    display: flex;
+    flex-direction: column;
+}
+.product_div{
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+width: 70%;
+margin-left: 15%;
+margin-right: 15%;
+margin-top: 10px;
+
+
+}
+.box{
+width: 20%;
+height: 170px;
+margin-left:4%;
+margin-top: 30px;
+border-style: solid;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+
+
+}
+
+.checkbox{
+    margin-right: 170px;
+}
+.heigth{
+    
+    font-size:17px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .dvd{
    display: flex;
@@ -107,6 +160,9 @@ select{
    margin-top: 50px;
    
 }
+
+
+
 .dvd_none{
     display: none;
 }

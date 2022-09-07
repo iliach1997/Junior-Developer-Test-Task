@@ -1,39 +1,66 @@
 <?php
+
+if($_SERVER['REQUEST_METHOD']==='POST'){
+$sku=$_POST['sku'];
+$name=$_POST['name'];
+$price=$_POST['price'];
+$option_type=$_POST['option_type'];
+$size=$_POST['size'];
+$weigth=$_POST['weigth'];
+$heigth=$_POST['heigth'];
+$width=$_POST['width'];
+$length=$_POST['length'];
 $errors=[];
 
 if(!$sku){
-$errors[]='Product sku is required';
+$errors[0]='Product #sku is required !!!';
 }
+
+
+if(!$name){
+    $errors[1]='Product #name is required !!!';
+}
+
+
 if(!$price){
-    $errors[]='Product name is required';
+ $errors[2]='Product #price is required !!!';
 }
-if(!$sku){
-    $errors[]='Product price is required';
-}
+
+
 if($option_type==='type-switcher'){
-  $errors[]='Please choose type-switcher';
+  $errors[3]='Please choose type-switcher !!!';
 }
+
+
 if($option_type==='dvd'){
-    $errors[]='Product size is required';
+    if(!$size){
+         $errors[4]='Product size is required !!!';
+    }
+  
+   
 }
 if($option_type==='book'){
-    $errors[]='Product weigth is required';
+    if(!$weigth){
+       $errors[5]='Product weigth is required !!!'; 
+    }
+    
 }
 if($option_type==='furniture'){
 if(!$heigth){
-        $errors[]='Product heigth is required';
+        $errors[6]='Product heigth is required !!!';
     }
-    elseif(!$width){
-        $errors[]='Product width is required';
+    if(!$width){
+        $errors[7]='Product width is required !!!';
     }
-    elseif(!$length){
-        $errors[]='Product length is required';
+    if(!$length){
+        $errors[8]='Product length is required !!!';
     }
 }
 
 
+ return $errors;
 
 
 
-
-return $errors;
+}
+ 
