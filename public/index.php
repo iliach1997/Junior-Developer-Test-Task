@@ -24,8 +24,7 @@ if(isset($_POST['delete'])&& isset($_POST['deleteid'])){
 <?php $products=mysqli_query($conn, "SELECT * FROM products ORDER BY option_type DESC");?>
     <?php foreach ($products as $i => $product){ ?>
         
-  
-           
+      
         <div class="box">
         <div><input type="checkbox" name="deleteid[]" class="checkbox" value="<?php echo $product['id'];?>" ></div>
    
@@ -43,6 +42,7 @@ if(isset($_POST['delete'])&& isset($_POST['deleteid'])){
         
     
     <?php } ?>
-</div></form> 
+</div>
+</form> 
 
 <!-- http://localhost/-Final-project/Junior-Developer-Test-Task/public/index.php -->

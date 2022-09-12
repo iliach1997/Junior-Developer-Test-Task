@@ -3,6 +3,7 @@ abstract class CreateProduct{
 
     public function createdata($sku,$name,$price,$option_type,$size,$weigth,$heigth,$width,$length){
       $pdo = require_once '../database/Database.php';
+
       $statement=$pdo->prepare("INSERT INTO products(sku,name,price,option_type,size,weigth,heigth,width,length)
       VALUES(:sku,:name,:price,:option_type,:size,:weigth,:heigth,:width,:length)"
     );

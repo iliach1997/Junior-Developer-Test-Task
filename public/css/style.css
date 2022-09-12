@@ -17,6 +17,13 @@ background-color: black;
 margin-left: 15%;
 margin-right: 15%;
 }
+.styck_div{
+width: 70%;
+height: 5px;
+background-color: black;
+margin-left: 15%;
+margin-right: 15%;
+}
 
 /* section style button */
 .button_add{
@@ -142,18 +149,6 @@ flex-direction: column;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 .dvd{
    display: flex;
    margin-left: 15%;
@@ -183,3 +178,5 @@ flex-direction: column;
 .furniture_none{
     display: none;
 }
+
+
