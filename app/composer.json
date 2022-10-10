@@ -1,8 +1,8 @@
 {
-    "name": "chapi/app",
+    "name": "Product",
     "autoload": {
         "psr-4": {
-            "Chapi\\App\\": "src/"
+            "Product\\": "views/product"
         }
     },
     "authors": [
