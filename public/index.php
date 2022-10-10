@@ -31,10 +31,10 @@ if(isset($_POST['delete'])&& isset($_POST['deleteid'])){
         <div><?php echo $product['sku']; ?></div>
         <div><?php echo $product['name'];?> </div>
         <div><?php echo $product['price']."$"; ?></div>
-        <div class="size"><?php if(!empty($product['size'])){echo 'Size: '.$product['size']." MB";} ?></div>
-        <div><?php if(!empty($product['weigth'])){echo 'Weigth: '.$product['weigth'].' '.'KG';}?></div>
+        <div class="size"><?php if(($product['size']!=0)){echo 'Size: '.$product['size']." MB";} ?></div>
+        <div><?php if(($product['weigth']!=0)){echo 'Weigth: '.$product['weigth'].' '.'KG';}?></div>
        
-        <div class="heigth"><?php if(!empty($product['heigth']))
+        <div class="heigth"><?php if(($product['heigth']!=0))
         {echo 'Dimension: '.$product['heigth']."x";echo $product['width']."x";echo $product['length'];} ?>
         </div>
        </div>

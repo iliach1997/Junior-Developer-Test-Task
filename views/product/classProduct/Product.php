@@ -19,7 +19,7 @@ class Product extends CreateProduct{
 
     public function create()
     {
-        $this->addProduct();
+     $this->addProduct();
       
     }
 }

@@ -113,7 +113,9 @@
 </html>
 
  <?php
- include_once '../views/product/classProduct/Product.php';
+ //
+  include_once '../views/product/abstract/book.php';
+//include_once '../views/product/classProduct/Product.php';
   
 ?>
  

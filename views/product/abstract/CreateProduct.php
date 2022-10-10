@@ -27,17 +27,17 @@ abstract class CreateProduct{
         public $heigth;
         public $width;
         public $length;
-        public function __construct($sku,$name,$price,$option_type,$size,$weigth,$heigth,$width,$length)
+        public function __construct($sku,$name,$price,$option_type)
       { 
         $this->sku=$sku;
         $this->name=$name;
         $this->price=$price;
         $this->option_type=$option_type;
-        $this->size=$size;
-        $this->weigth=$weigth;
-        $this->heigth=$heigth;
-        $this->width=$width;
-        $this->length=$length;
+        // $this->size=$size;
+        // $this->weigth=$weigth;
+        // $this->heigth=$heigth;
+        // $this->width=$width;
+        // $this->length=$length;
   
       }
     
@@ -50,7 +50,9 @@ abstract class CreateProduct{
        }
       else if($this->option_type==='furniture'){
       $this->createdata($this->sku,$this->name,$this->price,$this->option_type,null,null,$this->heigth,$this->width,$this->length);
-     }
       }
-      abstract public function create();
+      }
+      
+ 
+      //abstract public function create();
     };
